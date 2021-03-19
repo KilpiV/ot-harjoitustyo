@@ -6,15 +6,17 @@ Testaillaan _**Markdown**_ notaation käyttöä:
 Haluamme esimerkiksi laittaa tekstiin erilaisia muotoiluja kuten
 *kursiivia* ja **lihavointia**.
 
-Random sanoja:
+####Random sanoja:
 * mutta
   * että
 * kaivos
 * kahvikone
 * ovi
-* luolasto
+  * luolasto
 * taivas
 * kenkä
+
+*ja jotain lisättyä kursiivilla*
 
 [gitlog](https://github.com/KilpiV/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
