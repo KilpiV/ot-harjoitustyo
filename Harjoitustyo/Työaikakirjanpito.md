@@ -7,7 +7,7 @@
 |  8.2  | 4    | lisää JavaFX:n ogelmien selvittelyä |
 | 12.2  | 1    | JavaFx jatkuu... |
 | 12.2  | 2    | Ohjauksessa JavaFx:n selvittelyä |
-|   -   | 0    | |
+| 13.2  | 3    | JavaFx... |
 |   -   | 0    | |
 |   -   | 0    | |
 |   -   | 0    | |
