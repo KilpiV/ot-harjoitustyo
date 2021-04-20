@@ -21,7 +21,7 @@ public class RuokalistausDao {
         return connection;
     }
 
-    public List<Ruokalistaus> List(String paivays) throws SQLException {
+    public List<Ruokalistaus> list(String paivays) throws SQLException {
         List<Ruokalistaus> ruuat = new ArrayList<>();
         try (Connection connection = createConnectionAndEnsureDatabase();
                 ResultSet results = connection.prepareStatement("SELECT * FROM Ruoka WHERE paivays= ?").executeQuery()) { // WHERE paivays = ?
@@ -40,7 +40,6 @@ public class RuokalistausDao {
             statement.setString(2, ruoka.getFood());
             statement.setInt(3, ruoka.getQuantity());
             statement.executeUpdate();
-            
 
         }
     }
