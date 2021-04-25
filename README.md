@@ -1,12 +1,14 @@
 # Harjoitustyö
 
-## Laatta-peli
+## Helpotus-ruokailulista
 
-Kahden pelaajan peli, jossa on tarkoitus saada oman värinen viiden laatan suora. 
+Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden ja aineuliherkkyyksien kanssa. 
 
 ### Dokumentaatio
 
-[Vaatimusmäärittely](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Vaatimusm%C3%A4%C3%A4rittely.md)
+[Vaatimusmäärittely](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Vaatimusm%C3%A4%C3%A4rittely_Helpotus.md)
 
 [Työaikakirjanpito](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Ty%C3%B6aikakirjanpito.md)
+
+[Arkkitehtuuri]
 
