@@ -1,8 +1,10 @@
 # Harjoitustyö
 
+
 ## Helpotus-ruokailulista
 
 Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden ja aineuliherkkyyksien kanssa. 
+
 
 ### Dokumentaatio
 
@@ -10,7 +12,7 @@ Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan r
 
 [Työaikakirjanpito](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Ty%C3%B6aikakirjanpito.md)
 
-[Arkkitehtuuri]...tulossa
+[Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Dokumentaatio/arkkitehtuuri.md)
 
 [Käyttöohje]...tulossa
 
@@ -30,6 +32,7 @@ Testikattavuusraportti luodaan komennolla
 mvn jacoco:report
 ```
 Kattavuusraportti löytyy avaamalla selaimella tiedosto *target/site/jacoco/index.html*
+
 
 #### Suoritettavan jarin generointi
 
