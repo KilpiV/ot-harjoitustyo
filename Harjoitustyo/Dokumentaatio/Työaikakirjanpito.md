@@ -27,4 +27,4 @@
 |  26.4 | 4    | Pakkausrakennetta ja koodia |
 |  26.4 | 2    | Sekvenssikaavio yms |
 |   -   | 0    |  |
-|  yht  | 36   |  | 
+|  yht  | 38   |  | 
