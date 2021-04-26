@@ -15,7 +15,7 @@ Vain peruskäyttäjät
     - Sovellus ilmoittaa, jos nimimerkki on virheellinen eli kyseisellä nimimerkillä ei ole käyttäjää.
 - Voi olla monta käyttäjää.
 - Voi lisätä syömisiään tietylle päivälle.	[x]
-- Voi tarkistaa syömisiään tietyltä päivältä.	[x]
+- Voi tarkistaa syömisiään tietyltä päivältä.	[x....]
 
 ### Jatkokehitysideointia
  * Ohjelma voidaan lisätä IBS-ongelmat kohta joka etsii yhtäläisyyksiä kahden edellisen vuorokauden ja edellisten vastaavien kohdilta yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.

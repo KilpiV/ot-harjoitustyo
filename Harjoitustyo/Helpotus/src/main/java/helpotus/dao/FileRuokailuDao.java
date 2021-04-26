@@ -21,7 +21,8 @@ public class FileRuokailuDao implements RuokailuDao {
                 String date = parts[0];
                 String food = parts[1];
                 int quantity = Integer.parseInt(parts[2]);
-                User user = users.getAll().stream().filter(u -> u.getUsername().equals(parts[3])).findFirst().orElse(null);
+                User user = users.getAll().stream().filter(u -> u.getUsername()
+                        .equals(parts[3])).findFirst().orElse(null);
                 Ruokailu ruokailu = new Ruokailu(date, food, quantity, user);
                 ruokailut.add(ruokailu);
             }
