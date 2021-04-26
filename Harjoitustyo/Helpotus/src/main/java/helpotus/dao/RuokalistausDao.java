@@ -1,7 +1,11 @@
-package helpotus;
+package helpotus.dao;
 
 import java.sql.*;
 import java.util.*;
+import helpotus.domain.Ruokalistaus;
+import helpotus.ui.Helpotus;
+import helpotus.ui.TextUI;
+
 
 public class RuokalistausDao {
 

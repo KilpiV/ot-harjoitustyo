@@ -1,7 +1,9 @@
-package helpotus;
+package helpotus.ui;
 
 import java.sql.SQLException;
 import java.util.*;
+import helpotus.domain.Ruokalistaus;
+import helpotus.dao.RuokalistausDao;
 
 //lisää käyttäjä... ja ruokalistauksiin myös ja niiden hakuihin...
 public class TextUI {

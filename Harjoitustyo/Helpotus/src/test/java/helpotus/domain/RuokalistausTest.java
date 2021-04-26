@@ -1,4 +1,4 @@
-package helpotus;
+package helpotus.domain;
 
 import org.junit.After;
 import org.junit.AfterClass;

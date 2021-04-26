@@ -1,8 +1,9 @@
-package helpotus;
+package helpotus.ui;
 
 import java.util.*;
 import java.sql.*;
-//import helpotus.TextUI;
+import helpotus.domain.Ruokalistaus;
+import helpotus.dao.RuokalistausDao;
 
 public class Helpotus {
 
