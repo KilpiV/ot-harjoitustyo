@@ -7,10 +7,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class RuokalistausTest {
+public class RuokailuTest {
 
-    Ruokalistaus ruoka;
-//    public RuokalistausTest() {
+    Ruokailu ruoka;
+//    public RuokailuTest() {
 //    }
 
 //    @BeforeClass
@@ -22,7 +22,7 @@ public class RuokalistausTest {
 //    }
     @Before
     public void setUp() {
-        ruoka = new Ruokalistaus("20-02-2002", "banaani");
+        ruoka = new Ruokailu("20-02-2002", "banaani", new User("testaaja"));
     }
 
     @Test

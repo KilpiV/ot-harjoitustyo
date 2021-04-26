@@ -9,13 +9,13 @@ Sovellukseen voidaan seurata syömisiä, siihen tallennetaan syömisiä eri päi
 Vain peruskäyttäjät
 
 ### Suunnitellut toiminnallisuudet
-- Voi luoda uuden käyttäjän.
-- Sisäänkirjautuminen:
+- Voi luoda uuden käyttäjän.	[x]
+- Sisäänkirjautuminen:		[x...]
     - Yksilöllisellä nimimerkillä
     - Sovellus ilmoittaa, jos nimimerkki on virheellinen eli kyseisellä nimimerkillä ei ole käyttäjää.
 - Voi olla monta käyttäjää.
 - Voi lisätä syömisiään tietylle päivälle.	[x]
-- Voi tarkistaa syömisiään tietyltä päivältä.
+- Voi tarkistaa syömisiään tietyltä päivältä.	[x]
 
 ### Jatkokehitysideointia
  * Ohjelma voidaan lisätä IBS-ongelmat kohta joka etsii yhtäläisyyksiä kahden edellisen vuorokauden ja edellisten vastaavien kohdilta yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.

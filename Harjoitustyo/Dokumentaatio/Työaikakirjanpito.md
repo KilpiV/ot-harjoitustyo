@@ -23,5 +23,8 @@
 |  22.4 | 2    | pakkauksia ja selvitystä |
 |  24.4 | 1    | DAO:n selvittämistä |
 |  25.4 | 1    | Puuttuvia osia, arkkitehtuuri yms. |
+|  26.4 | 1    | README ja repon päivitystä |
+|  26.4 | 4    | Pakkausrakennetta ja koodia |
 |   -   | 0    |  |
-|  yht  | 27   |  | 
+|   -   | 0    |  |
+|  yht  | 36   |  | 
