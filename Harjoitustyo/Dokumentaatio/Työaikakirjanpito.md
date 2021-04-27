@@ -26,5 +26,6 @@
 |  26.4 | 1    | README ja repon päivitystä |
 |  26.4 | 4    | Pakkausrakennetta ja koodia |
 |  26.4 | 2    | Sekvenssikaavio yms |
+|  27.4 | 1,5  | Testejä ja uusimmat raportit yms. |
 |   -   | 0    |  |
-|  yht  | 38   |  | 
+|  yht  | 39,5 |  | 
