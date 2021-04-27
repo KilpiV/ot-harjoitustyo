@@ -1,5 +1,14 @@
 # Harjoitustyö
 
+# Viikko 5 release
+[Release](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
+
+Sovellus olettaa että löytyy tiedosto config.properties, jonka sisältö on:
+```
+userFile = users.txt
+ruokailuFile = ruokailut.txt
+```
+ja tekstitiedostot: users.txt ja ruokailut.txt
 
 ## Helpotus-ruokailulista
 
