@@ -1,4 +1,3 @@
-
 package helpotus.domain;
 
 import java.util.*;

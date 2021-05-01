@@ -6,6 +6,7 @@ import java.util.*;
 import helpotus.domain.User;
 
 public class FileUserDao implements UserDao {
+
     private List<User> users;
     private String file;
 

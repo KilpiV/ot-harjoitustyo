@@ -1,5 +1,9 @@
 package helpotus.domain;
 
+/**
+ * Luokka, joka edustaa sovelluksen käyttäjää
+ */
+
 public class User {
 
     private String username;

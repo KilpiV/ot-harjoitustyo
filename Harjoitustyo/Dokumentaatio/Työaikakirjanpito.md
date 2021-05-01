@@ -27,5 +27,9 @@
 |  26.4 | 4    | Pakkausrakennetta ja koodia |
 |  26.4 | 2    | Sekvenssikaavio yms |
 |  27.4 | 1,5  | Testejä ja uusimmat raportit yms. |
+|  27.4 | 0,5  | Github release |
+|  28.4 | 1    | JavaDocin selvitystä ja aloitusta |
+|  29.4 | 3    | Kirjautumisongelmien selvittelyä.. |
+|  30.4 | 5    | koodin siistimistä, javaDocia ja dokumentaatiota |
 |   -   | 0    |  |
-|  yht  | 39,5 |  | 
+|  yht  | 49   |  | 

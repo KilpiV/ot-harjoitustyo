@@ -1,9 +1,9 @@
 package helpotus.dao;
 
 import org.junit.After;
-import org.junit.AfterClass;
+//import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
+//import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
@@ -11,17 +11,17 @@ import static org.junit.Assert.*;
 import java.util.*;
 import java.io.FileWriter;
 import java.io.File;
-import helpotus.domain.Ruokailu;
+import helpotus.domain.Eating;
 import helpotus.domain.User;
 import helpotus.domain.FakeUserDao;
 
-public class FileRuokailuDaoTest {
+public class FileEatingDaoTest {
     
     @Rule
     public TemporaryFolder testFolder = new TemporaryFolder();
     
     File userFile;
-    RuokailuDao dao;
+    EatingDao dao;
     
     @Before
     public void setUp() throws Exception {
@@ -30,20 +30,20 @@ public class FileRuokailuDaoTest {
         userDao.create(new User("tester"));
         
         try (FileWriter file = new FileWriter(userFile.getAbsolutePath())) {
-            file.write("02-02-2000;banaani;1;tester\n");
+            file.write("02-02-2000;banaani;tester\n");
         }
         
-        dao = new FileRuokailuDao(userFile.getAbsolutePath(), userDao);   
+        dao = new FileEatingDao(userFile.getAbsolutePath(), userDao);   
     }
    
     @Test
     public void ruokailuIsCorrectlyReadFromFile() {
-        List<Ruokailu> ruokailut = dao.getAll();
+        List<Eating> ruokailut = dao.getAll();
         assertEquals(1, ruokailut.size());
-        Ruokailu ruokailu = ruokailut.get(0);
+        Eating ruokailu = ruokailut.get(0);
         assertEquals("banaani", ruokailu.getFood());
         assertEquals("02-02-2000", ruokailu.getDate());
-        assertEquals(1, ruokailu.getQuantity());
+//        assertEquals(1, ruokailu.getQuantity());
         assertEquals("tester", ruokailu.getUser().getUsername());
     } 
     

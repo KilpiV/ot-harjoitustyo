@@ -1,31 +1,23 @@
 package helpotus.ui;
 
-//import java.sql.SQLException;
 import java.util.*;
-import helpotus.domain.Ruokailu;
-import helpotus.domain.Ruokalistaus;
+import helpotus.domain.Eating;
+import helpotus.domain.FoodListings;
 import helpotus.domain.User;
-import helpotus.dao.RuokalistausDao;
-import helpotus.dao.UserDao;
-import helpotus.dao.FileRuokailuDao;
-import helpotus.dao.FileUserDao;
-import helpotus.dao.RuokailuDao;
-import helpotus.ui.Helpotus;
+//import helpotus.dao.RuokalistausDao;
 
-//lisää käyttäjä... ja ruokalistauksiin myös ja niiden hakuihin...
 public class TextUI {
-
-    private ArrayList<Ruokailu> foods;
+//    private ArrayList<Ruokailu> foods;
     private Scanner userScanner;
-    private RuokalistausDao ruokalistausDao;
-    private User user;
-    private Ruokalistaus ruokalistaus;
+//    private RuokalistausDao ruokalistausDao;
+//    private User user;      // voi ppoistaa
+    private FoodListings foodListing;
 
-    public TextUI(Scanner scanner, Ruokalistaus ruokalistaus) {
+    public TextUI(Scanner scanner, FoodListings foodListing) {
         this.userScanner = scanner;
-        this.foods = new ArrayList<>();
-        this.user = null;
-        this.ruokalistaus = ruokalistaus;
+//        this.foods = new ArrayList<>();
+//        this.user = null;       // voi poistaa...
+        this.foodListing = foodListing;
     }
 
     public String askDate() {
@@ -33,7 +25,6 @@ public class TextUI {
         String month;
         String day;
         while (true) {
-
             System.out.println("Anna ensin vuosi");
             System.out.print(">> ");
             year = this.userScanner.nextLine();
@@ -61,7 +52,7 @@ public class TextUI {
             if (year.length() == 4 && rightYear) {
                 break;
             }
-            System.out.println("virheellinen vuosiluku, anna vuosiluku muodossa yyyy!");
+            System.out.println("Virheellinen vuosiluku, anna vuosiluku muodossa yyyy!");
         }
         while (true) {
             System.out.println("Anna seuraavaksi kuukausi");
@@ -87,10 +78,8 @@ public class TextUI {
                         || month.charAt(0) == '7' || month.charAt(0) == '8' || month.charAt(0) == '9') {
                     break;
                 }
-
             }
-
-            System.out.println("virheellinen kuukausi!");
+            System.out.println("Virheellinen kuukausi!");
         }
         if (month.length() == 1) {
             month = "0" + month;
@@ -99,9 +88,7 @@ public class TextUI {
             System.out.println("Anna vielä päivämäärä");
             System.out.print(">> ");
             day = this.userScanner.nextLine();
-//                    if(month.equals("x")) {               //  paluu vaihtoehto???
-//                    boolean rightMonth = false;
-//                                      jos karkausvuosi... jos kuukausi == 2...????
+            // karkausvuosi?
             if (day.length() == 2) {
                 if (day.charAt(0) == '3') {
                     if (day.charAt(1) == '0' || day.charAt(1) == '1') {
@@ -130,9 +117,7 @@ public class TextUI {
                         || day.charAt(0) == '7' || day.charAt(0) == '8' || day.charAt(0) == '9') {
                     break;
                 }
-
             }
-
             System.out.println("virheellinen päiväys!");
         }
         if (day.length() == 1) {
@@ -144,19 +129,19 @@ public class TextUI {
     }
 
     public void foodSurvey(User user) throws Exception {
-        User youUser = user;
         while (true) {
             System.out.println("");
             System.out.println("---");
             System.out.println("Syötä käsky");
-            System.out.println("(1) lisää ruokia");
-            System.out.println("(2) tarkasta syömisiä");
-            System.out.println("(x) poistu");
+            System.out.println("(1) Lisää ruokia");
+            System.out.println("(2) Tarkasta syömisiä");
+            System.out.println("(x) Poistu");
             System.out.print(">> ");
 
             String command = this.userScanner.nextLine();
             if (command.equals("x") || command.equals("X")) {
-                this.ruokalistaus.logout();
+                this.foodListing.logout();
+                user = null;
                 break;
             }
             if (command.equals("1")) {
@@ -165,21 +150,17 @@ public class TextUI {
                 System.out.println("Anna lisättävä ruoka");
                 System.out.print(">> ");
                 String food = userScanner.nextLine();
-//                System.out.println("Anna määrä");
-//                int quantity = Integer.valueOf(userScanner.nextLine());
-                this.ruokalistaus.createRuokailu(date, food);
-//                this.foods.add(new Ruokailu(date, food, quantity, new User("Anna")));
-//                this.database.add(new Ruokalistaus(date, food, quantity));
+                this.foodListing.createEating(date, food);
 
             }
             if (command.equals("2")) {
 
-                System.out.println("Anna ruokailun päivämäärä");
+                System.out.println("Anna haettavan ruokailun päivämäärä");
                 String date = askDate();
+                System.out.println("");
                 System.out.println("Päivän ruokailut:");
-                System.out.println(this.ruokalistaus.getDated(date));
-//                System.out.println(this.foods);
-//                System.out.println(this.database.List(date));
+                List<Eating> eatings = this.foodListing.getDated(date);
+                System.out.println(eatings);
                 // hae kyseisen päivän ruokailut listaus
 
             }
@@ -187,13 +168,14 @@ public class TextUI {
     }
 
     public void start() throws Exception {
+        System.out.println("Tervetuloa Helpotukseen");
         while (true) {
             System.out.println("");
             System.out.println("---");
             System.out.println("Syötä käsky");
-            System.out.println("(1) kirjaudu");
-            System.out.println("(2) luo uusi käyttäjä");
-            System.out.println("(x) poistu");
+            System.out.println("(1) Kirjaudu");
+            System.out.println("(2) Luo uusi käyttäjä");
+            System.out.println("(x) Poistu");
             System.out.print(">> ");
 
             String command = this.userScanner.nextLine();
@@ -202,10 +184,12 @@ public class TextUI {
             }
             if (command.equals("1")) {
                 System.out.println("Anna nimimerkkisi");
+                System.out.print(">> ");
                 String name = userScanner.nextLine();
                 // kirjautuminen
-                if (this.ruokalistaus.login(name)) {
-                    foodSurvey(this.ruokalistaus.getLoggedUser());
+                if (this.foodListing.login(name)) {
+//                    this.user = this.foodListing.getLoggedUser();
+                    foodSurvey(this.foodListing.getLoggedUser());
                 } else {
                     System.out.println("Virheellinen nimimerkki");
                 }
@@ -213,14 +197,15 @@ public class TextUI {
             if (command.equals("2")) {
 
                 System.out.println("Anna haluamasi nimimerkki");
+                System.out.print(">> ");
                 String name = userScanner.nextLine();
                 // uuden käyttäjän luominen
-                if (this.ruokalistaus.createUser(name)) {
+                if (this.foodListing.createUser(name)) {
+                    System.out.println("Uusi käyttäjä " + name + " on nyt luotu");
                     continue;
                 } else {
                     System.out.println("Nimimerkki on jo käytössä, valitse toinen");
                 }
-//                this.ruokalistaus.createUser(name);
             }
             if (command.equals("42")) {
                 System.out.println("Löysit elämän tarkoituksen!");

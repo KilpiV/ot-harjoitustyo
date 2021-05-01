@@ -29,8 +29,7 @@ Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan r
 
 [Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Dokumentaatio/arkkitehtuuri.md)
 
-[Käyttöohje]...tulossa
-
+[Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Harjoitustyo/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
 ### Komentorivitoiminnot
 
 #### Testaus
@@ -51,7 +50,7 @@ Kattavuusraportti löytyy avaamalla selaimella tiedosto *target/site/jacoco/inde
 
 #### Suoritettavan jarin generointi
 
-Komennolla
+Saadaab komennolla
 
 ```
 mvn package
@@ -68,4 +67,14 @@ mvn jxr:jxr checkstyle:checkstyle
 ```
 
 Virheilmoitukset löytyvät avaamalla selaimella tiedosto *target/site/checkstyle.html*
+
+#### Javadoc
+
+JavaDoc generoidaan komennolla
+
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia pääsee tarkastelemaan selaimella avaamalla tiedosto *target/site/apidocs/index.html*
 
