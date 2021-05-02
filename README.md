@@ -50,7 +50,7 @@ Kattavuusraportti löytyy avaamalla selaimella tiedosto *target/site/jacoco/inde
 
 #### Suoritettavan jarin generointi
 
-Saadaab komennolla
+Saadaan komennolla
 
 ```
 mvn package

@@ -1,5 +1,4 @@
 /**
- * Sovelluslogiikka 
+ * Sovelluslogiikka.
  */
-
 package helpotus.domain;

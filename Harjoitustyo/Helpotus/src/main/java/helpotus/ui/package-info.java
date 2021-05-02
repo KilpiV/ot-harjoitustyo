@@ -1,5 +1,4 @@
 /**
- * Käyttöliittymä
+ * Käyttöliittymä.
  */
-
 package helpotus.ui;

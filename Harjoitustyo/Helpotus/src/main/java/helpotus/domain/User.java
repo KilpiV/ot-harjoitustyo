@@ -1,13 +1,17 @@
 package helpotus.domain;
 
 /**
- * Luokka, joka edustaa sovelluksen käyttäjää
+ * Luokka, joka edustaa sovelluksen käyttäjää.
  */
-
 public class User {
 
     private String username;
 
+    /**
+     * Kontrukstori uuden käyttäjän luomiseen.
+     *
+     * @param username käyttäjänimi
+     */
     public User(String username) {
         this.username = username;
     }

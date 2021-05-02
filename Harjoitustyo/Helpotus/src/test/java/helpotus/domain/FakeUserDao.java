@@ -4,8 +4,9 @@ import java.util.*;
 import helpotus.dao.UserDao;
 
 public class FakeUserDao implements UserDao {
+
     List<User> users = new ArrayList<>();
-    
+
     public FakeUserDao() {
         users.add(new User("tester"));
     }
@@ -18,7 +19,7 @@ public class FakeUserDao implements UserDao {
 
     @Override
     public User findByUsername(String username) {
-        return users.stream().filter(u->u.getUsername().equals(username))
+        return users.stream().filter(u -> u.getUsername().equals(username))
                 .findFirst().orElse(null);
     }
 
@@ -26,6 +27,5 @@ public class FakeUserDao implements UserDao {
     public List<User> getAll() {
         return users;
     }
-    
 
 }

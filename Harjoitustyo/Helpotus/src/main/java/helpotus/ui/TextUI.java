@@ -4,19 +4,14 @@ import java.util.*;
 import helpotus.domain.Eating;
 import helpotus.domain.FoodListings;
 import helpotus.domain.User;
-//import helpotus.dao.RuokalistausDao;
 
 public class TextUI {
-//    private ArrayList<Ruokailu> foods;
+
     private Scanner userScanner;
-//    private RuokalistausDao ruokalistausDao;
-//    private User user;      // voi ppoistaa
     private FoodListings foodListing;
 
     public TextUI(Scanner scanner, FoodListings foodListing) {
         this.userScanner = scanner;
-//        this.foods = new ArrayList<>();
-//        this.user = null;       // voi poistaa...
         this.foodListing = foodListing;
     }
 
@@ -161,7 +156,6 @@ public class TextUI {
                 System.out.println("Päivän ruokailut:");
                 List<Eating> eatings = this.foodListing.getDated(date);
                 System.out.println(eatings);
-                // hae kyseisen päivän ruokailut listaus
 
             }
         }
@@ -188,7 +182,6 @@ public class TextUI {
                 String name = userScanner.nextLine();
                 // kirjautuminen
                 if (this.foodListing.login(name)) {
-//                    this.user = this.foodListing.getLoggedUser();
                     foodSurvey(this.foodListing.getLoggedUser());
                 } else {
                     System.out.println("Virheellinen nimimerkki");
@@ -199,7 +192,6 @@ public class TextUI {
                 System.out.println("Anna haluamasi nimimerkki");
                 System.out.print(">> ");
                 String name = userScanner.nextLine();
-                // uuden käyttäjän luominen
                 if (this.foodListing.createUser(name)) {
                     System.out.println("Uusi käyttäjä " + name + " on nyt luotu");
                     continue;

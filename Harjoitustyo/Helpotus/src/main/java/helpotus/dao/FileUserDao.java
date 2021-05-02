@@ -5,6 +5,9 @@ import java.io.FileWriter;
 import java.util.*;
 import helpotus.domain.User;
 
+/**
+ * Luokka, joka vastaa käyttäjien pysyväistallennuksesta.
+ */
 public class FileUserDao implements UserDao {
 
     private List<User> users;

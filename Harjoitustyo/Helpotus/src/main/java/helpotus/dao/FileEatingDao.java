@@ -6,6 +6,9 @@ import java.util.*;
 import helpotus.domain.Eating;
 import helpotus.domain.User;
 
+/**
+ * Luokka joka vastaa ruokailujen pysyväistallennuksesta.
+ */
 public class FileEatingDao implements EatingDao {
 
     public List<Eating> eatings;
@@ -20,7 +23,6 @@ public class FileEatingDao implements EatingDao {
                 String[] parts = scanner.nextLine().split(";");
                 String date = parts[0];
                 String food = parts[1];
-//                int quantity = Integer.parseInt(parts[2]);
                 User user = users.getAll().stream().filter(u -> u.getUsername()
                         .equals(parts[2])).findFirst().orElse(null);
                 Eating ruokailu = new Eating(date, food, user);

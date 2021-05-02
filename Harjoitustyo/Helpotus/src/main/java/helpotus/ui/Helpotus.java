@@ -1,20 +1,22 @@
 package helpotus.ui;
 
 import java.util.*;
-//import java.sql.*;
-//import java.util.Properties;
 import java.io.FileInputStream;
-//import helpotus.domain.Eating;
 import helpotus.domain.FoodListings;
-//import helpotus.domain.User;
-//import helpotus.dao.UserDao;
 import helpotus.dao.FileEatingDao;
 import helpotus.dao.FileUserDao;
-//import helpotus.ui.Helpotus;
-//import helpotus.dao.EatingDao;
 
+/**
+ * Ohjelman käynnistävä luokka.
+ */
 public class Helpotus {
-
+    
+    /**
+     * Main metodi, joka käynnistää koko ohjelman.
+     * 
+     * @param args 
+     * @throws Exception  
+     */
     public static void main(String[] args) throws Exception {
         System.out.println("Hello user!!!");
 

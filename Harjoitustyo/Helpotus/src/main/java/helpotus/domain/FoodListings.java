@@ -5,15 +5,20 @@ import helpotus.dao.UserDao;
 import helpotus.dao.EatingDao;
 
 /**
- * Luokka, joka vastaa sovelluslogiikasta
+ * Luokka, joka vastaa sovelluslogiikasta.
  */
-
 public class FoodListings {
 
     private EatingDao eatingDao;
     private UserDao userDao;
     private User loggedIn;
 
+    /**
+     * Konstruktori, jolla luodaan sovelluslogiikasta vastaava listausolio.
+     * 
+     * @param eatingDao ruokailurajapinnan omaava olio
+     * @param userDao käyttäjärajapinnan omaava olio
+     */
     public FoodListings(EatingDao eatingDao, UserDao userDao) {
         this.eatingDao = eatingDao;
         this.userDao = userDao;
@@ -21,14 +26,13 @@ public class FoodListings {
     }
 
     /**
-     * Uuden ruokailun lisääminen käyttäjälle, joka on kirjautuneena sisään 
-     * 
+     * Uuden ruokailun lisääminen käyttäjälle, joka on kirjautuneena sisään.
+     *
      * @param date Lisättävän ruokailun päivämäärä
      * @param food Lisättävä ruokailu/ruoka
-     * 
+     *
      * @return true, jos virhettä ei tapahtunut lisäystä tehdessä
      */
-    
     public boolean createEating(String date, String food) {
         Eating eating = new Eating(date, food, loggedIn);
         try {
@@ -40,13 +44,12 @@ public class FoodListings {
     }
 
     /**
-     * Kirjautuneen käyttäjän, valitun päivän ruokailut
-     * 
+     * Kirjautuneen käyttäjän, valitun päivän ruokailut.
+     *
      * @param date Kysytyn ruokailun päivämäärä
-     * 
+     *
      * @return Lista ruokailuista kyseiseltä päivältä
      */
-    
     public List<Eating> getDated(String date) {
         if (this.loggedIn == null) {
             return new ArrayList<>();
@@ -62,12 +65,11 @@ public class FoodListings {
     }
 
     /**
-     * Sisäänkirjautuminen
-     * 
+     * Sisäänkirjautuminen.
+     *
      * @param username käyttäjätunnus
      * @return true jos käyttäjätunnus löytyy, muuten false
      */
-    
     public boolean login(String username) {
         User user = userDao.findByUsername(username);
         if (user == null) {
@@ -79,30 +81,28 @@ public class FoodListings {
     }
 
     /**
-     * Käyttäjä, joka on kirjautuneena
-     * 
+     * Käyttäjä, joka on kirjautuneena.
+     *
      * @return käyttäjä joka on kirjautuneena
      */
-    
     public User getLoggedUser() {
         return loggedIn;
     }
 
     /**
-     * Uloskirjautuminen
+     * Uloskirjautuminen.
      */
     public void logout() {
         loggedIn = null;
     }
 
     /**
-     * Uuden käyttäjän luominen
-     * 
+     * Uuden käyttäjän luominen.
+     *
      * @param username käyttäjätunnus
-     * 
+     *
      * @return true jos uusi käyttäjätunnus on luotu onnistuneesti, muuten false
      */
-    
     public boolean createUser(String username) {
         if (userDao.findByUsername(username) != null) {
             return false;

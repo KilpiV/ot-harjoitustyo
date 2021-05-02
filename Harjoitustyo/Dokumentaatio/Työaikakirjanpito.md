@@ -31,5 +31,6 @@
 |  28.4 | 1    | JavaDocin selvitystä ja aloitusta |
 |  29.4 | 3    | Kirjautumisongelmien selvittelyä.. |
 |  30.4 | 5    | koodin siistimistä, javaDocia ja dokumentaatiota |
+|   1.5 | 4    | koodin siistimistä, testejä ja dokumentaatiota |
 |   -   | 0    |  |
-|  yht  | 49   |  | 
+|  yht  | 53   |  | 

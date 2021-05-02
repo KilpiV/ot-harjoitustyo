@@ -16,26 +16,26 @@ import helpotus.domain.User;
 import helpotus.domain.FakeUserDao;
 
 public class FileEatingDaoTest {
-    
+
     @Rule
     public TemporaryFolder testFolder = new TemporaryFolder();
-    
+
     File userFile;
     EatingDao dao;
-    
+
     @Before
     public void setUp() throws Exception {
-        userFile = testFolder.newFile("testfile_users.txt");  
+        userFile = testFolder.newFile("testfile_users.txt");
         UserDao userDao = new FakeUserDao();
         userDao.create(new User("tester"));
-        
+
         try (FileWriter file = new FileWriter(userFile.getAbsolutePath())) {
             file.write("02-02-2000;banaani;tester\n");
         }
-        
-        dao = new FileEatingDao(userFile.getAbsolutePath(), userDao);   
+
+        dao = new FileEatingDao(userFile.getAbsolutePath(), userDao);
     }
-   
+
     @Test
     public void ruokailuIsCorrectlyReadFromFile() {
         List<Eating> ruokailut = dao.getAll();
@@ -45,8 +45,8 @@ public class FileEatingDaoTest {
         assertEquals("02-02-2000", ruokailu.getDate());
 //        assertEquals(1, ruokailu.getQuantity());
         assertEquals("tester", ruokailu.getUser().getUsername());
-    } 
-    
+    }
+
     @After
     public void tearDown() {
         userFile.delete();
