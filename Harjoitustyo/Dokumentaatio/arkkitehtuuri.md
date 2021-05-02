@@ -33,7 +33,7 @@ Ruokailujen talletuksen kent채t on eroteltu puolipistein. Ensiksi on p채iv채m채�
 # Kirjautuminen
 ![Sekvenssikaavio onnistunutLogin](https://user-images.githubusercontent.com/74470219/116127312-58505480-a6d0-11eb-939a-16dc8693846b.JPG)
 
-[Sekvenssikaavio ep채onnistunutLogin]
+![Sekvenssikaavio ep채onnistunutLogin](https://user-images.githubusercontent.com/74470219/116812677-ab0a9000-ab58-11eb-835b-2a64645f8d57.JPG)
 
 # Uuden k채ytt채j채n luominen
 # Uuden ruokailun luominen
