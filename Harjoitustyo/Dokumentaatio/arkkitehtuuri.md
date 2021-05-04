@@ -31,11 +31,17 @@ Ruokailujen talletuksen kentät on eroteltu puolipistein. Ensiksi on päivämä�
 
 #### Päätoiminnallisuudet
 #### Kirjautuminen
+Seuraavat sekvenssikaaviot kuvaavat onnistunutta ja epäonnistunutta sisäänkirjautumista.
+
 ![Sekvenssikaavio onnistunutLogin](https://user-images.githubusercontent.com/74470219/116127312-58505480-a6d0-11eb-939a-16dc8693846b.JPG)
 
 ![Sekvenssikaavio epäonnistunutLogin](https://user-images.githubusercontent.com/74470219/116812677-ab0a9000-ab58-11eb-835b-2a64645f8d57.JPG)
 
 #### Uuden käyttäjän luominen
+Uuden käyttäjän luominen estettynä sekvenssikaaviolla.
+
+![Sekvenssikaavio uusiKayttajaOnnistuneesti](https://user-images.githubusercontent.com/74470219/117002761-a4148680-acec-11eb-8133-89770c824d07.JPG)
+
 #### Uuden ruokailun luominen
 #### Ruokailujen tarkasteleminen
 
