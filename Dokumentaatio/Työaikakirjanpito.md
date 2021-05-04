@@ -1,4 +1,4 @@
-## Työaikakirjanpito
+# Työaikakirjanpito
 
 
 | pvm | h | tehdyt asiat  |
@@ -10,7 +10,7 @@
 | 13.2  | 3    | JavaFx... |
 | (yht) | (13) | |
 
-# aiheen vaihto
+## aiheen vaihto
 
 | pvm | h | tehdyt asiat  |
 | :----:|:-----| :-----|
