@@ -11,9 +11,12 @@ Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös
 userFile = users.txt
 ruokailuFile = ruokailut.txt
 ```
-ja tekstitiedostot: users.txt ja ruokailut.txt
-Luo nämä tiedostot ja avaa ohjelma komennolla
+Hae nämä tiedostot (tai luo).
 
+Tekstitiedostot: users.txt ja ruokailut.txt
+Luodaan automaattisesti ohjelmassa. 
+
+Avaa ohjelma komennolla
 ```
 java -jar Helpotus-1.0-SNAPSHOT.jar
 ```
