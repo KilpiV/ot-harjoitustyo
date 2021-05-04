@@ -1,10 +1,13 @@
 # Harjoitustyö
 
-# Viikko 5 release
+### Viikko 5 release
 [Release](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
 
+### Viikko 6 release
+[Release6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
+
 Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
-Sovellus olettaa että löytyy tiedosto config.properties, jonka sisältö on:
+Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös Release6 kautta), jonka sisältö on:
 ```
 userFile = users.txt
 ruokailuFile = ruokailut.txt
