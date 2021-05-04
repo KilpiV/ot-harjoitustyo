@@ -30,7 +30,7 @@ public class TextUI {
             if (answer.equals(year)) {
                 break;
             } else {
-                System.out.println("answer");
+                System.out.println(answer);
             }
 //            boolean rightYear = false;
 //            if (year.length() == 4) {

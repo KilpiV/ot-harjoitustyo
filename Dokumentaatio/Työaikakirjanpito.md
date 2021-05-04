@@ -33,5 +33,6 @@
 |  30.4 | 5    | koodin siistimistä, javaDocia ja dokumentaatiota |
 |   1.5 | 4    | koodin siistimistä, testejä ja dokumentaatiota |
 |   2.5 | 2    | Dokumentaatiota yms. |
+|   4.5 | 3    | Dokumentaatiota, uusi luokka-päiväyksiä varten, release. |
 |   -   | 0    |  |
-|  yht  | 55   |  | 
+|  yht  | 58   |  | 

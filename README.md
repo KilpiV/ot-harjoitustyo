@@ -35,6 +35,7 @@ Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan r
 [Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/arkkitehtuuri.md)
 
 [Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
+
 ### Komentorivitoiminnot
 
 #### Testaus
