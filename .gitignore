@@ -2,7 +2,8 @@
 laskarit/viikko2/Maksukortti/target/
 laskarit/viikko2/Maksukortti/nbproject/
 /laskarit/viikko2/Unicafe/nbproject/
-/Harjoitustyo/Helpotus/target/
-/Harjoitustyo/Helpotus/nbproject/
-/Harjoitustyo/Helpotus/users.txt
-/Harjoitustyo/Helpotus/eatings.txt
+/Helpotus/target/
+/Helpotus/nbproject/
+/Helpotus/users.txt
+/Helpotus/eatings.txt
+/Helpotus/nbactions.xml

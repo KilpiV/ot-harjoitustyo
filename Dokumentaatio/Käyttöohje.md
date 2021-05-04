@@ -61,7 +61,7 @@ Syötä käsky
 >>
 ```
 # Uuden ruokailun lisääminen
-Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1" ja sitten päivämäärän lisättävälle ruokailulle.
+Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan.
 ```
 >> 1
 Anna lisättävän ruokailun päivämäärä

@@ -18,7 +18,7 @@ Vain peruskäyttäjät
 - Voi tarkistaa syömisiään tietyltä päivältä.	[x]
 
 ### Jatkokehitysideointia
- * Ohjelma voidaan lisätä IBS-oireet tai allergiaoireet tietylle päivälle, jolloin ohjelma etsii yhtäläisyyksiä näiden oireiden syöntijaksoilta, **(allergia: kyseinen päivä, IBS: kahden vuorokauden ajalta)** yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.
+ * Ohjelma voidaan lisätä IBS-oireet tai allergiaoireet tietylle päivälle, jolloin ohjelma etsii yhtäläisyyksiä näiden oireiden syöntijaksoilta, *(allergia: kyseinen päivä, IBS: kahden vuorokauden ajalta)* yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.
  * Voi lisätä perhekunnat ja tietyt ateriat suoraan koko perheelle. 
  * Voi merkata jonkin ruuan seurattavaksi, jolloin näkee monestiko sen ruuan jälkeen on ollut allergia- tai IBS-oireita ja monestiko ei.
  * "Hälytykset" tietyille ruoka-aineille, esim ettei sokeria ole liian usein viikolla ruuassa...
