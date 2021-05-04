@@ -1,4 +1,4 @@
-### Käyttöohje
+# Käyttöohje
 
 Lataa tiedosto [Helpotus-1.0-SNAPSHOT.jar]...
 
@@ -33,7 +33,7 @@ Syötä käsky
 >>
 ```
 
-# Kirjautuminen
+### Kirjautuminen
 Kirjautuminen tapahtuu syöttämällä ensin "1" ja sitten jo luotu nimimerkkisi koneelle. Muuten ohjelma tulostaa "Virheellinen nimimerkki".
 ```
 >> 1
@@ -41,7 +41,7 @@ Anna nimimerkkisi
 >>
 ```
 
-# Uuden käyttäjän luominen
+### Uuden käyttäjän luominen
 Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle, jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä  on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
 ```
 >> 2
@@ -49,7 +49,7 @@ Anna haluamasi nimimerkki
 >> "nimimerkki"
 Uusi käyttäjä "nimimerkki" on nyt luotu
 ```
-# Kirjautumisen jälkeen
+### Kirjautumisen jälkeen
 Avautuu uusi näkymä
 ```
 
@@ -60,7 +60,7 @@ Syötä käsky
 (x) Poistu
 >>
 ```
-# Uuden ruokailun lisääminen
+### Uuden ruokailun lisääminen
 Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan.
 ```
 >> 1
@@ -76,7 +76,7 @@ Anna lisättävä ruoka
 >> juusto
 
 ```
-# Ruokailujen tarkasteleminen
+### Ruokailujen tarkasteleminen
 Ruokailujen tarkastelu tapahtuu syöttämällä ensin "2" ja sitten haettavan ruokailun päivämäärän. Jolloin ohjelma tulostaa listan kyseisen päivän ruokailuista.
 ```
 >> 2
@@ -94,7 +94,7 @@ Päivän ruokailut:
 
 ```
 
-# Poistuminen
+### Poistuminen
 Ohjelmasta kirjaudutaan ulos ja poistutaan syöttämällä "x"
 ```
 >> x
