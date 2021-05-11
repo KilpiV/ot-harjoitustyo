@@ -34,6 +34,6 @@
 |   1.5 | 4    | koodin siistimistä, testejä ja dokumentaatiota |
 |   2.5 | 2    | Dokumentaatiota yms. |
 |   4.5 | 3,5  | Dokumentaatiota, uusi luokka-päiväyksiä varten, release. |
-|  11.5 | +++  | Dokumentaatiota... |
+|  11.5 | 6    | Dokumentaatiota, testejä, koodin siistimistä |
 |   -   | 0    |  |
 |  yht  | 58,5 |  | 

@@ -15,7 +15,7 @@ public class FoodListings {
 
     /**
      * Konstruktori, jolla luodaan sovelluslogiikasta vastaava listausolio.
-     * 
+     *
      * @param eatingDao ruokailurajapinnan omaava olio
      * @param userDao käyttäjärajapinnan omaava olio
      */

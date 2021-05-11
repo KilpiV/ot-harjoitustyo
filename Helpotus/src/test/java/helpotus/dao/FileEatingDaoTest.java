@@ -1,9 +1,7 @@
 package helpotus.dao;
 
 import org.junit.After;
-//import org.junit.AfterClass;
 import org.junit.Before;
-//import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
@@ -22,11 +20,12 @@ public class FileEatingDaoTest {
 
     File userFile;
     EatingDao dao;
+    UserDao userDao;
 
     @Before
     public void setUp() throws Exception {
         userFile = testFolder.newFile("testfile_users.txt");
-        UserDao userDao = new FakeUserDao();
+        userDao = new FakeUserDao();
         userDao.create(new User("tester"));
 
         try (FileWriter file = new FileWriter(userFile.getAbsolutePath())) {
@@ -38,13 +37,35 @@ public class FileEatingDaoTest {
 
     @Test
     public void ruokailuIsCorrectlyReadFromFile() {
-        List<Eating> ruokailut = dao.getAll();
-        assertEquals(1, ruokailut.size());
-        Eating ruokailu = ruokailut.get(0);
-        assertEquals("banaani", ruokailu.getFood());
-        assertEquals("02-02-2000", ruokailu.getDate());
-//        assertEquals(1, ruokailu.getQuantity());
-        assertEquals("tester", ruokailu.getUser().getUsername());
+        List<Eating> eatings = dao.getAll();
+        assertEquals(1, eatings.size());
+        Eating eating = eatings.get(0);
+        assertEquals("banaani", eating.getFood());
+        assertEquals("02-02-2000", eating.getDate());
+        assertEquals("tester", eating.getUser().getUsername());
+    }
+
+    @Test
+    public void getDateAllReturnCorrectlyEmptyList() {
+        String date = "02-03-2000";
+        List<Eating> eatings = dao.getDateAll(date);
+        assertEquals(new ArrayList<>(), eatings);
+    }
+
+    @Test
+    public void getDateAllReturnCorrectly() {
+        String date = "02-02-2000";
+        List<Eating> eatings = dao.getDateAll(date);
+        assertEquals("[Pvm:02-02-2000, ruoka-aine:banaani]", eatings.toString());
+    }
+
+    @Test
+    public void eatingSavedIsFound() throws Exception {
+        Eating eating = new Eating("02-03-2020", "omena", userDao.findByUsername("tester"));
+        dao.create(eating);
+        String date = "02-03-2020";
+        List<Eating> eatings = dao.getDateAll(date);
+        assertEquals("[Pvm:02-03-2020, ruoka-aine:omena]", eatings.toString());
     }
 
     @After

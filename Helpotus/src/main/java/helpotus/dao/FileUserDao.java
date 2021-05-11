@@ -13,6 +13,13 @@ public class FileUserDao implements UserDao {
     private List<User> users;
     private String file;
 
+    /**
+     * Luodaan olio joka vastaa käyttäjien pysyväistallennuksesta. Lukee ja
+     * kirjoittaa käyttäjä listaa.
+     *
+     * @param file käyttäjä tiedoston nimi
+     * @throws Exception jos luku epäonnistuu
+     */
     public FileUserDao(String file) throws Exception {
         users = new ArrayList<>();
         this.file = file;

@@ -1,6 +1,5 @@
 package helpotus.domain;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -36,7 +35,7 @@ public class FoodListingsTest {
         listings.logout();
         assertEquals(null, listings.getLoggedUser());
     }
-    
+
     @Test
     public void cantMakeUserIfNameNotUnique() {
         assertFalse(listings.createUser("tester"));

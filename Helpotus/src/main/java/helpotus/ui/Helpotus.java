@@ -10,12 +10,12 @@ import helpotus.dao.FileUserDao;
  * Ohjelman käynnistävä luokka.
  */
 public class Helpotus {
-    
+
     /**
      * Main metodi, joka käynnistää koko ohjelman.
-     * 
-     * @param args 
-     * @throws Exception  
+     *
+     * @param args komentorivin parametrit
+     * @throws java.lang.Exception kun ei pysty lukemaan ohjelmaa
      */
     public static void main(String[] args) throws Exception {
         System.out.println("Hello user!!!");

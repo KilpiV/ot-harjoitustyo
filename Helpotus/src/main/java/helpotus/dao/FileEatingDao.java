@@ -14,6 +14,13 @@ public class FileEatingDao implements EatingDao {
     public List<Eating> eatings;
     private String file;
 
+    /**
+     * Luo olion joka vastaa pysyväistallennuksesta.
+     *
+     * @param file tiedoston nimi johon tallennetaan
+     * @param users käyttäjistä vastaava olio
+     * @throws Exception jos luku epäonnistuu
+     */
     public FileEatingDao(String file, UserDao users) throws Exception {
         eatings = new ArrayList<>();
         this.file = file;

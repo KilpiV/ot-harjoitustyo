@@ -26,74 +26,24 @@ public class TextUI {
             System.out.println("Anna ensin vuosi");
             System.out.print(">> ");
             year = this.userScanner.nextLine();
-            String answer =this.dates.yearRight(year);
+            String answer = this.dates.yearRight(year);
             if (answer.equals(year)) {
                 break;
             } else {
                 System.out.println(answer);
             }
-//            boolean rightYear = false;
-//            if (year.length() == 4) {
-//                if ((year.charAt(0) == '1' && year.charAt(1) == '9')
-//                        || (year.charAt(0) == '2' && year.charAt(1) == '0')) { // jos alkaa muulla kuin 19--
-//                    if (year.charAt(2) == '0' || year.charAt(2) == '1' || year.charAt(2) == '2'
-//                            || year.charAt(2) == '3' || year.charAt(2) == '4' || year.charAt(2) == '5'
-//                            || year.charAt(2) == '6' || year.charAt(2) == '7'
-//                            || year.charAt(2) == '8' || year.charAt(2) == '9') {
-//                        if (year.charAt(3) == '0' || year.charAt(3) == '1' || year.charAt(3) == '2'
-//                                || year.charAt(3) == '3' || year.charAt(3) == '4' || year.charAt(3) == '5'
-//                                || year.charAt(3) == '6' || year.charAt(3) == '7'
-//                                || year.charAt(3) == '8' || year.charAt(3) == '9') {
-//                            rightYear = true;
-//                        }
-//                    }
-//
-//                } else if (year.charAt(0) == '2' && year.charAt(1) == '1' //..2100 korkein
-//                        && year.charAt(2) == '0' && year.charAt(3) == '0') {
-//                    rightYear = true;
-//                }
-//            }
-//            if (year.length() == 4 && rightYear) {
-//                break;
-//            }
-//            System.out.println("Virheellinen vuosiluku, anna vuosiluku muodossa yyyy!");
         }
         while (true) {
             System.out.println("Anna seuraavaksi kuukausi");
             System.out.print(">> ");
             month = this.userScanner.nextLine();
-            String answer = this.dates.monthRight(month);            
-            if (answer.equals(month) || answer.equals("0"+month)) {
+            String answer = this.dates.monthRight(month);
+            if (answer.equals(month) || answer.equals("0" + month)) {
                 month = answer;
                 break;
             } else {
                 System.out.println(answer);
             }
-//            if (month.length() == 2) {
-//                if (month.charAt(0) == '1') {
-//                    if (month.charAt(1) == '0' || month.charAt(1) == '1' || month.charAt(1) == '2') {
-//                        break;
-//                    }
-//                }
-//                if (month.charAt(0) == '0') {
-//                    if (month.charAt(1) == '1' || month.charAt(1) == '2' || month.charAt(1) == '3'
-//                            || month.charAt(1) == '4' || month.charAt(1) == '5' || month.charAt(1) == '6'
-//                            || month.charAt(1) == '7' || month.charAt(1) == '8' || month.charAt(1) == '9') {
-//                        break;
-//                    }
-//                }
-//            }
-//            if (month.length() == 1) {
-//                if (month.charAt(0) == '1' || month.charAt(0) == '2' || month.charAt(0) == '3'
-//                        || month.charAt(0) == '4' || month.charAt(0) == '5' || month.charAt(0) == '6'
-//                        || month.charAt(0) == '7' || month.charAt(0) == '8' || month.charAt(0) == '9') {
-//                    break;
-//                }
-//            }
-//            System.out.println("Virheellinen kuukausi!");
-//        }
-//        if (month.length() == 1) {
-//            month = "0" + month;
         }
         int yearDigit = Integer.parseInt(year);
         int monthDigit = Integer.parseInt(month);
@@ -102,47 +52,12 @@ public class TextUI {
             System.out.print(">> ");
             day = this.userScanner.nextLine();
             String answer = this.dates.dayRight(day, yearDigit, monthDigit);
-            if (answer.equals(day) || answer.equals("0"+day)) {
+            if (answer.equals(day) || answer.equals("0" + day)) {
                 day = answer;
                 break;
             } else {
                 System.out.println(answer);
             }
-            
-//            // karkausvuosi?
-//            if (day.length() == 2) {
-//                if (day.charAt(0) == '3') {
-//                    if (day.charAt(1) == '0' || day.charAt(1) == '1') {
-//                        break;
-//                    }
-//                }
-//                if (day.charAt(0) == '1' || day.charAt(0) == '2') {
-//                    if (day.charAt(1) == '1' || day.charAt(1) == '2' || day.charAt(1) == '3'
-//                            || day.charAt(1) == '4' || day.charAt(1) == '5' || day.charAt(1) == '6'
-//                            || day.charAt(1) == '7' || day.charAt(1) == '8'
-//                            || day.charAt(1) == '9' || day.charAt(1) == '0') {
-//                        break;
-//                    }
-//                }
-//                if (day.charAt(0) == '0') {
-//                    if (day.charAt(1) == '1' || day.charAt(1) == '2' || day.charAt(1) == '3'
-//                            || day.charAt(1) == '4' || day.charAt(1) == '5' || day.charAt(1) == '6'
-//                            || day.charAt(1) == '7' || day.charAt(1) == '8' || day.charAt(1) == '9') {
-//                        break;
-//                    }
-//                }
-//            }
-//            if (day.length() == 1) {
-//                if (day.charAt(0) == '1' || day.charAt(0) == '2' || day.charAt(0) == '3'
-//                        || day.charAt(0) == '4' || day.charAt(0) == '5' || day.charAt(0) == '6'
-//                        || day.charAt(0) == '7' || day.charAt(0) == '8' || day.charAt(0) == '9') {
-//                    break;
-//                }
-//            }
-//            System.out.println("virheellinen päiväys!");
-//        }
-//        if (day.length() == 1) {
-//            day = "0" + day;
         }
         System.out.println("Annoit päivämäärän " + day + "-" + month + "-" + year);
         String date = day + "-" + month + "-" + year;
@@ -206,7 +121,6 @@ public class TextUI {
                 System.out.println("Anna nimimerkkisi");
                 System.out.print(">> ");
                 String name = userScanner.nextLine();
-                // kirjautuminen
                 if (this.foodListing.login(name)) {
                     foodSurvey(this.foodListing.getLoggedUser());
                 } else {

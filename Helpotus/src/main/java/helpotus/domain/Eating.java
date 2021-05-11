@@ -11,7 +11,7 @@ public class Eating {
 
     /**
      * Konstruktori, jolla uusi ruokailu luodaan.
-     * 
+     *
      * @param date päiväys
      * @param food lisättävä ruoka
      * @param user kirjautunut käyttäjä

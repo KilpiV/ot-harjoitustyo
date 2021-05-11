@@ -4,13 +4,13 @@ import helpotus.domain.User;
 import java.util.*;
 
 /**
- * Rajapinta käyttäjille.
+ * Rajapinta käyttäjien käsittelyyn.
  */
 public interface UserDao {
 
     /**
      * Metodi, jolla luodaan uusi käyttäjä tallennettavaksi.
-     * 
+     *
      * @param user käyttäjä
      * @return user kyseisen käyttäjän
      * @throws Exception jos lisäys ei onnistu oikein
@@ -19,7 +19,7 @@ public interface UserDao {
 
     /**
      * Metodi, joka hakee käyttäjän käyttäjänimen perusteella.
-     * 
+     *
      * @param username käyttäjänimi
      * @return user käyttäjä
      */
@@ -27,7 +27,7 @@ public interface UserDao {
 
     /**
      * Metodi, joka antaa listan kaikista käyttääjistä.
-     * 
+     *
      * @return lista käyttäjistä
      */
     List<User> getAll();
