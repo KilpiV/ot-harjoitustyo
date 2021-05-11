@@ -6,14 +6,14 @@
 [Release 6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
 
 Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
-Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös Release6 kautta), jonka sisältö on:
+Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös Release 6 kautta), jonka sisältö on:
 ```
 userFile = users.txt
-ruokailuFile = ruokailut.txt
+eatingsFile = eatings.txt
 ```
 Hae nämä tiedostot (tai luo).
 
-Tekstitiedostot: users.txt ja ruokailut.txt
+Tekstitiedostot: users.txt ja eatings.txt
 Luodaan automaattisesti ohjelmassa. 
 
 Avaa ohjelma komennolla
@@ -23,7 +23,7 @@ java -jar Helpotus-1.0-SNAPSHOT.jar
 
 ## Helpotus-ruokailulista
 
-Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden ja aineuliherkkyyksien kanssa. 
+Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden ja ruoka-aineyliherkkyyksien kanssa. 
 
 
 ### Dokumentaatio
@@ -37,6 +37,11 @@ Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan r
 [Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
 
 ### Komentorivitoiminnot
+
+Kun ohjelma on ladattu koneelle, voi sovelluksen suorittaa komennolla
+```
+mvn compile exec:java -Dexec.mainClass=helpotus.ui.Helpotus
+```
 
 #### Testaus
 

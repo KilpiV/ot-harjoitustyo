@@ -8,16 +8,16 @@ Sovellukseen voidaan seurata syömisiä, siihen tallennetaan syömisiä eri päi
 ### Käyttäjät
 Vain peruskäyttäjät
 
-### Suunnitellut toiminnallisuudet
-- Voi luoda uuden käyttäjän.	[x]
-- Sisäänkirjautuminen:		[x]
-    - Yksilöllisellä nimimerkillä	[x]
-    - Sovellus ilmoittaa, jos nimimerkki on virheellinen eli kyseisellä nimimerkillä ei ole käyttäjää.			[x]
-- Voi olla monta käyttäjää.			[x]
-- Voi lisätä syömisiään tietylle päivälle.	[x]
-- Voi tarkistaa syömisiään tietyltä päivältä.	[x]
+### Toiminnallisuudet
+- Voi luoda uuden käyttäjän.	
+- Sisäänkirjautuminen:
+    - Yksilöllisellä nimimerkillä	
+    - Sovellus ilmoittaa, jos nimimerkki on virheellinen eli kyseisellä nimimerkillä ei ole käyttäjää.
+- Voi olla monta käyttäjää.
+- Voi lisätä syömisiään tietylle päivälle.
+- Voi tarkistaa syömisiään tietyltä päivältä.
 
-### Jatkokehitysideointia
+#### Jatkokehitysideointia
  * Ohjelma voidaan lisätä IBS-oireet tai allergiaoireet tietylle päivälle, jolloin ohjelma etsii yhtäläisyyksiä näiden oireiden syöntijaksoilta, *(allergia: kyseinen päivä, IBS: kahden vuorokauden ajalta)* yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.
  * Voi lisätä perhekunnat ja tietyt ateriat suoraan koko perheelle. 
  * Voi merkata jonkin ruuan seurattavaksi, jolloin näkee monestiko sen ruuan jälkeen on ollut allergia- tai IBS-oireita ja monestiko ei.

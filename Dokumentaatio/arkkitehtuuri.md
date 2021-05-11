@@ -18,7 +18,7 @@ Nämä ovat TextUI luokassa, joka vastaa sovelluksen ja käyttäjän välisestä
 
 ## Tietojen pysyväistallennus
 ### Tiedostot
-Tiedostojen sisältö on seuraavanlainen:
+Tiedostojen sisällöt ovat seuraavan tyyppisiä:
 ```
 hiiri
 kissa
