@@ -36,4 +36,4 @@
 |   4.5 | 3,5  | Dokumentaatiota, uusi luokka-päiväyksiä varten, release. |
 |  11.5 | 6    | Dokumentaatiota, testejä, koodin siistimistä |
 |   -   | 0    |  |
-|  yht  | 58,5 |  | 
+|  yht  | 64,5 |  | 
