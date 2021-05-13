@@ -23,7 +23,7 @@ java -jar Helpotus-1.0-SNAPSHOT.jar
 
 ## Helpotus-ruokailulista
 
-Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden ja ruoka-aineyliherkkyyksien kanssa. 
+Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden, ruoka-aineyliherkkyyksien ja IBS-oireiden kanssa. 
 
 
 ### Dokumentaatio

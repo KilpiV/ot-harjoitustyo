@@ -67,11 +67,11 @@ public class TextUI {
     public void foodSurvey(User user) throws Exception {
         while (true) {
             System.out.println("");
-            System.out.println("---");
+            System.out.println("---Ruokailut---");
             System.out.println("Syötä käsky");
             System.out.println("(1) Lisää ruokia");
             System.out.println("(2) Tarkasta syömisiä");
-            System.out.println("(x) Poistu");
+            System.out.println("(x) Kirjaudu ulos");
             System.out.print(">> ");
 
             String command = this.userScanner.nextLine();
@@ -86,7 +86,16 @@ public class TextUI {
                 System.out.println("Anna lisättävä ruoka");
                 System.out.print(">> ");
                 String food = userScanner.nextLine();
-                this.foodListing.createEating(date, food);
+                System.out.println("Olet lisäämässä ruokailun " + food + ", päiväykselle " + date);
+                System.out.println("Jos haluat peruuttaa syötä x, muuten paina enter");
+                System.out.print(">> ");
+                String cancel = userScanner.nextLine();
+                if (cancel.equals("x") || cancel.equals("X")) {
+                    System.out.println("Ruokailua ei lisätty");
+                } else {
+                    this.foodListing.createEating(date, food);
+                    System.out.println("Lisättiin [pvm:" + date + ", ruoka-aine:" + food + "]");
+                }
 
             }
             if (command.equals("2")) {
@@ -106,7 +115,7 @@ public class TextUI {
         System.out.println("Tervetuloa Helpotukseen");
         while (true) {
             System.out.println("");
-            System.out.println("---");
+            System.out.println("---Kirjautuminen---");
             System.out.println("Syötä käsky");
             System.out.println("(1) Kirjaudu");
             System.out.println("(2) Luo uusi käyttäjä");

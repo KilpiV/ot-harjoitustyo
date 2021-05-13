@@ -15,10 +15,12 @@ public class DateCheckingTest {
 
     @Test
     public void noticeNoDigits() {
-        String digit = "1234";
+        String digit = "0123456789";
         String notDigit = "1e34";
+        String noDigits = "=:? +";
         assertTrue(dates.onlyDigits(digit, digit.length()));
         assertFalse(dates.onlyDigits(notDigit, notDigit.length()));
+        assertFalse(dates.onlyDigits(noDigits, noDigits.length()));
     }
 
     @Test

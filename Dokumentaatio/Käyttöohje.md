@@ -25,7 +25,7 @@ Ohjelman käynnistyessä ensin tulevat seuraavat tekstit
 Hello user!!!
 Tervetuloa Helpotukseen
 
----
+---Kirjautuminen---
 Syötä käsky
 (1) Kirjaudu
 (2) Luo uusi käyttäjä
@@ -53,15 +53,15 @@ Uusi käyttäjä "nimimerkki" on nyt luotu
 Avautuu uusi näkymä
 ```
 
----
+---Ruokailut---
 Syötä käsky
 (1) Lisää ruokia
 (2) Tarkasta syömisiä
-(x) Poistu
+(x) Kirjaudu ulos
 >>
 ```
 ### Uuden ruokailun lisääminen
-Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan.
+Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
 ```
 >> 1
 Anna lisättävän ruokailun päivämäärä
@@ -74,6 +74,17 @@ Anna vielä päivämäärä
 Annoit päivämäärän 02-02-2000
 Anna lisättävä ruoka
 >> juusto
+Olet lisäämässä ruokailun juusto, päiväykselle 02-02-2000
+Jos haluat peruuttaa syötä x, muuten paina enter
+>> 
+Lisättiin [pvm:02-02-2000, ruoka-aine:juusto]
+
+```
+```
+Olet lisäämässä ruokailun juusto, päiväykselle 02-02-2000
+Jos haluat peruuttaa syötä x, muuten paina enter
+>> x
+Ruokailua ei lisätty
 
 ```
 ### Ruokailujen tarkasteleminen
