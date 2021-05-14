@@ -3,41 +3,47 @@
 ## Pakkausrakenne
 
 Ohjelman rakenne noudattaa kerrosarkkitehtuuria ja koostuu kolmesta kerroksesta seuraavasti:
-Pakkauksessa helpotus.ui on tekstikäyttöliittymä TextUI ja ohjelman käynnistyksestä vastaava pääluokka Helpotus. Pakkaus helpotus.domain sisältää sovelluslogiikan kuten käyttäjä luokan. Pakkaus helpotus.dao sisältää pysyväistallennuksesta vastaavat koodit.
+Pakkauksessa helpotus.ui on tekstikäyttöliittymä TextUI ja ohjelman käynnistyksestä vastaava pääluokka Helpotus. Pakkaus helpotus.domain sisältää sovelluslogiikan kuten User-luokan. Pakkaus helpotus.dao sisältää pysyväistallennuksesta vastaavat koodit.
+
 ![pakkausrakenne](https://user-images.githubusercontent.com/74470219/118138849-75469080-b40f-11eb-90bb-0ba304487212.jpeg)
 
 ## Käyttöliittymä
 
 Käyttöliittymä sisältää kaksi erilaista tilaa
-* kirjautuminen ja uuden käyttäjän luominen
-* ruokien lisäys ja niiden tarkastaminen
-Nämä ovat TextUI luokassa, joka vastaa sovelluksen ja käyttäjän välisestä kanssakäymisestä. Se on eriytetty sovelluslogiikasta ja se kutsuu DateChecking-oliota, joka vastaa päiväyksien oikeellisuuden tarkistuksesta ja FoodListings-oliota, joka vastaa muusta.
+* *kirjautuminen ja uuden käyttäjän luominen*
+* *ruokien lisäys ja niiden tarkastaminen*
+
+Nämä ovat [TextUI](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/ui/TextUI.java) luokassa, joka vastaa sovelluksen ja käyttäjän välisestä kanssakäymisestä. Se on eriytetty sovelluslogiikasta ja se kutsuu [DateChecking](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/DateChecking.java)-oliota, joka vastaa päiväyksien oikeellisuuden tarkistuksesta ja [FoodListings](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/FoodListings.java)-oliota, joka vastaa muusta.
 
 ## Sovelluslogiikka
 
-User- ja Eating- luokat, kuvaavat käyttäjiä ja heidän ruokailujaan, nämä muodostavat sovelluksen loogisen datamallin.
+[User](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/User.java)- ja [Eating](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/Eating.java)- luokat, kuvaavat käyttäjiä ja heidän ruokailujaan, nämä muodostavat sovelluksen loogisen datamallin.
+
 ![User-Eatings](https://user-images.githubusercontent.com/74470219/118142990-90b39a80-b413-11eb-88ef-c71d6e485e1f.JPG)
 
 DateChecking-luokan olio vastaa ainoastaan päiväyksien tarkistuksista.
 
-FoodListings-luokan olio vastaa kaikista muista toiminnallisista kokonaisuuksista. Se tarjoaa kaikille käyttöliittymän toiminnoille oman metodin. Esimerkiksi näitä ovat:
+FoodListings-luokan olio vastaa kaikista muista toiminnallisista kokonaisuuksista. Se tarjoaa kaikille käyttöliittymän toiminnoille oman metodin. 
+Esimerkiksi näitä ovat:
  * boolean createEating(String date, String food)
  * List getDated(String date)
  * void logout()
  * boolean login(String username)
-FoodListings käsittelee käyttäjiä ja ruokailuja helpotus.dao pakkauksessa olevien rajapintojen userDao ja eatingDao kautta.
+FoodListings käsittelee käyttäjiä ja ruokailuja helpotus.dao pakkauksessa olevien rajapintojen [UserDao](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/dao/UserDao.java) ja [EatingDao](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/dao/EatingDao.java) kautta.
 
 Sovelluslogiikkaa kuvaava luokka/pakkauskaavio:
+
 ![Sovelluslogiikka](https://user-images.githubusercontent.com/74470219/118139201-cce4fc00-b40f-11eb-91ae-065238538e11.JPG)
 
 ## Tietojen pysyväistallennus
-Pysyväistallennuksesta huolehtii helpotus.dao pakkauksen sisältö. FileEatingDao huolehtii ruokailujen tallennuksesta tiedostoon ja FileUserDao taas huolehtii käyttäjien tallennuksesta omaan tiedostoonsa.
+
+Pysyväistallennuksesta huolehtii [helpotus.dao](https://github.com/KilpiV/ot-harjoitustyo/tree/master/Helpotus/src/main/java/helpotus/dao) pakkauksen sisältö. [FileEatingDao](https://github.com/KilpiV/ot-harjoitustyo/tree/master/Helpotus/src/main/java/helpotus/dao/FileEatingDao) huolehtii ruokailujen tallennuksesta tiedostoon ja [FileUserDao](https://github.com/KilpiV/ot-harjoitustyo/tree/master/Helpotus/src/main/java/helpotus/dao/FileUserDao) taas huolehtii käyttäjien tallennuksesta omaan tiedostoonsa.
 Datan tallennus on laitettu Dao-luokkien taakse, jolloin halutessa voidaan tallennusmuotoa helpommin muuttaa, kun sovelluslogiikka ei suoraan käytä näitä luokkia vaan rajapintoja.
 
 Tiedot tallennetaan txt-tiedostoihin.
 
 ### Tiedostot
-Sovelluksen juureen toteutettu konfiguraatiotiedosto config.properties määrittelee tallennettavien tiedostojen nimet.
+Sovelluksen juureen toteutettu konfiguraatiotiedosto [config.properties](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/config.properties) määrittelee tallennettavien tiedostojen nimet.
 
 Tiedostojen sisällöt ovat seuraavan tyyppisiä:
 
