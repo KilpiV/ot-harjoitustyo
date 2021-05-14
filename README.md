@@ -1,6 +1,9 @@
 # Harjoitustyö
 
-Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallentaa syömisiä eri päiviltä ja näitä voidaan myöhemmin hakea päivämäärän perusteella, näin esimerkiksi, voidaan seurata minkälainen ruokavalio itselle sopii tai vain seurata ruuankulutustaan. Esimerkiksi allergia- ja IBS-oireiden syiden selvittämiseen apuväline.
+## Helpotus-ruokailulista
+
+Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden, ruoka-aineyliherkkyyksien ja IBS-oireiden kanssa. 
+Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallentaa syömisiä eri päiviltä ja näitä voidaan myöhemmin hakea päivämäärän perusteella, näin esimerkiksi, voidaan seurata minkälainen ruokavalio itselle sopii tai vain seurata ruuankulutustaan.
 
 ### Releaset
 [Release 5](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
@@ -10,7 +13,7 @@ Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallent
 [loppupalautus]....
 
 Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
-Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös Release 6 kautta), jonka sisältö on:
+Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös uusimman Releasen kautta), jonka sisältö on:
 ```
 userFile = users.txt
 eatingsFile = eatings.txt
@@ -25,20 +28,18 @@ Avaa ohjelma komennolla
 java -jar Helpotus-1.0-SNAPSHOT.jar
 ```
 
-## Helpotus-ruokailulista
-
-Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden, ruoka-aineyliherkkyyksien ja IBS-oireiden kanssa. 
-
-
 ### Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Vaatimusm%C3%A4%C3%A4rittely_Helpotus.md)
 
-[Työaikakirjanpito](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Ty%C3%B6aikakirjanpito.md)
+[Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
 
 [Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Arkkitehtuuri.md)
 
-[Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
+[Testausdokumentti](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Testausdokumentti.md)
+
+[Työaikakirjanpito](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Ty%C3%B6aikakirjanpito.md)
+
 
 ### Komentorivitoiminnot
 
