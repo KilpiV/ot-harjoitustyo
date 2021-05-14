@@ -10,7 +10,7 @@ Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallent
 
 [Release 6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
 
-[loppupalautus]....
+[loppupalautus](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/loppupalautus)
 
 Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
 Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös uusimman Releasen kautta), jonka sisältö on:
