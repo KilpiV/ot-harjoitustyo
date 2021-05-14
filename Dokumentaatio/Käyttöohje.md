@@ -42,7 +42,7 @@ Anna nimimerkkisi
 ```
 
 ### Uuden käyttäjän luominen
-Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle, jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä  on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
+Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle, jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
 ```
 >> 2
 Anna haluamasi nimimerkki
@@ -61,7 +61,7 @@ Syötä käsky
 >>
 ```
 ### Uuden ruokailun lisääminen
-Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
+Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä, haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
 ```
 >> 1
 Anna lisättävän ruokailun päivämäärä

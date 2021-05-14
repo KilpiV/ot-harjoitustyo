@@ -1,9 +1,13 @@
 # Harjoitustyö
 
+Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallentaa syömisiä eri päiviltä ja näitä voidaan myöhemmin hakea päivämäärän perusteella, näin esimerkiksi, voidaan seurata minkälainen ruokavalio itselle sopii tai vain seurata ruuankulutustaan. Esimerkiksi allergia- ja IBS-oireiden syiden selvittämiseen apuväline.
+
 ### Releaset
 [Release 5](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
 
 [Release 6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
+
+[loppupalautus]....
 
 Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
 Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös Release 6 kautta), jonka sisältö on:
@@ -14,7 +18,7 @@ eatingsFile = eatings.txt
 Hae nämä tiedostot (tai luo).
 
 Tekstitiedostot: users.txt ja eatings.txt
-Luodaan automaattisesti ohjelmassa. 
+Luodaan automaattisesti ohjelmassa, jos niitä ei ole valmiina. 
 
 Avaa ohjelma komennolla
 ```
@@ -32,7 +36,7 @@ Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan r
 
 [Työaikakirjanpito](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Ty%C3%B6aikakirjanpito.md)
 
-[Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/arkkitehtuuri.md)
+[Arkkitehtuuri](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/Arkkitehtuuri.md)
 
 [Käyttöohje](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Dokumentaatio/K%C3%A4ytt%C3%B6ohje.md)
 
@@ -59,7 +63,7 @@ mvn jacoco:report
 Kattavuusraportti löytyy avaamalla selaimella tiedosto *target/site/jacoco/index.html*
 
 
-#### Suoritettavan jarin generointi
+#### Suoritettavan jar-tiedoston generointi
 
 Saadaan komennolla
 

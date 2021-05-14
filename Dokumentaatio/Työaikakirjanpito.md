@@ -35,6 +35,7 @@
 |   2.5 | 2    | Dokumentaatiota yms. |
 |   4.5 | 3,5  | Dokumentaatiota, uusi luokka-päiväyksiä varten, release. |
 |  11.5 | 6    | Dokumentaatiota, testejä, koodin siistimistä |
-|  13.5 | ++   | Dokumentaatiota, peruutusvaihtoehto lisätty ruokailuihin |
+|  13.5 | 6    | Dokumentaatiota, peruutus ruokailuihin, järjetelmätestausta |
+|  14.5 | ++    |  |
 |   -   | 0    |  |
-|  yht  | 64,5++ |  | 
+|  yht  | 70,5++ |  | 
