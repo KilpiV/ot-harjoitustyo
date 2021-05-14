@@ -2,26 +2,18 @@
 
 ## Helpotus-ruokailulista
 
-Sovellus jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden, ruoka-aineyliherkkyyksien ja IBS-oireiden kanssa. 
-Ohjelmalla useampi käyttäjä voi seurata syömisiänä. Siihen voidaan tallentaa syömisiä eri päiviltä ja näitä voidaan myöhemmin hakea päivämäärän perusteella, näin esimerkiksi, voidaan seurata minkälainen ruokavalio itselle sopii tai vain seurata ruuankulutustaan.
+Sovellus, jolla voidaan seurata syömisiä eri päiviltä. Helpottamaan sopivan ruokavalion löytymistä esim. allergioiden, ruoka-aineyliherkkyyksien ja IBS-oireiden kanssa. 
+Ohjelmalla useampi käyttäjä voi seurata syömisiään. Siihen voidaan tallentaa syömisiä eri päiviltä ja näitä voidaan myöhemmin hakea päivämäärän perusteella. Näin esimerkiksi käyttäjä voi seurata, minkälainen ruokavalio hänelle sopii, tai vain seurata ruuankulutustaan.
 
-### Releaset
-[Release 5](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
-
-[Release 6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
-
-[loppupalautus](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/loppupalautus)
-
-Lataa Releasen kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
-Sovellus olettaa, että löytyy tiedosto config.properties (tämä löytyy myös uusimman Releasen kautta), jonka sisältö on:
+Lataa [Releasen](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/loppupalautus) kautta löytyvä Helpotus-1.0-SNAPSHOT.jar tiedosto.
+Sovellus olettaa, että samasta kansiosta löytyy lisäksi tiedosto config.properties (tämä löytyy myös uusimman Releasen kautta), jonka sisältö on:
 ```
 userFile = users.txt
 eatingsFile = eatings.txt
 ```
 Hae nämä tiedostot (tai luo).
 
-Tekstitiedostot: users.txt ja eatings.txt
-Luodaan automaattisesti ohjelmassa, jos niitä ei ole valmiina. 
+Tekstitiedostot: users.txt ja eatings.txt, luodaan automaattisesti ohjelmassa, jos niitä ei ole valmiina. 
 
 Avaa ohjelma komennolla
 ```
@@ -93,4 +85,12 @@ mvn javadoc:javadoc
 ```
 
 JavaDocia pääsee tarkastelemaan selaimella avaamalla tiedosto *target/site/apidocs/index.html*
+
+
+### Releaset
+[Release 5](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko5)
+
+[Release 6](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/viikko6)
+
+[loppupalautus](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/loppupalautus)
 

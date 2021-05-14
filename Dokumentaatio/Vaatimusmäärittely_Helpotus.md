@@ -3,12 +3,15 @@
 ## Vaatimusmäärittely
 
 ### Sovelluksen tarkoitus
-Sovellukseen voidaan seurata syömisiä, siihen tallennetaan syömisiä eri päiviltä ja näin voidaan esimerkiksi, seurata minkälainen ruokavalio itselle sopii (allergioiden tai ruoka-aineherkkyyksien etsintä) tai vain seurata ruuankulutustaan.
+
+Sovelluksella voidaan seurata syömisiä, siihen tallennetaan syömisiä eri päiviltä ja näin voidaan esimerkiksi seurata, minkälainen ruokavalio itselle sopii (allergioiden tai ruoka-aineherkkyyksien etsintä), tai vain seurata ruuankulutusta.
 
 ### Käyttäjät
+
 Vain peruskäyttäjät
 
 ### Toiminnallisuudet
+
 - Voi luoda uuden käyttäjän.
     - Ohjelma huomauttaa, jos valitsemasi nimimerkki on jo käytössä.
 - Sisäänkirjautuminen:
@@ -20,8 +23,9 @@ Vain peruskäyttäjät
 - Voi tarkistaa syömisiään tietyltä päivältä.
 
 #### Jatkokehitysideointia
- * Ohjelma voidaan lisätä IBS-oireet tai allergiaoireet tietylle päivälle, jolloin ohjelma etsii yhtäläisyyksiä näiden oireiden syöntijaksoilta, *(allergia: kyseinen päivä, IBS: kahden vuorokauden ajalta)* yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.
+
+ * Ohjelmaan voidaan lisätä IBS-oireet tai allergiaoireet tietylle päivälle, jolloin ohjelma etsii yhtäläisyyksiä näiden oireiden syöntijaksoilta, *(allergia: kyseinen päivä, IBS: kahden vuorokauden ajalta)* yhtäläisyyksiä ja näin voi saada apua vältettävien ruokien huomaamiseen.
  * Voi lisätä perhekunnat ja tietyt ateriat suoraan koko perheelle. 
- * Voi merkata jonkin ruuan seurattavaksi, jolloin näkee monestiko sen ruuan jälkeen on ollut allergia- tai IBS-oireita ja monestiko ei (tietokanta, voisi toimia paremmin).
- * "Hälytykset" tietyille ruoka-aineille, esimerkiksi ettei sokeria ole liian usein viikolla ruuassa...
- * Graafinen käyttöliittymä
+ * Voi merkata jonkin ruuan seurattavaksi, jolloin näkee, monestiko sen ruuan jälkeen on ollut allergia- tai IBS-oireita ja monestiko ei (tietokanta voisi toimia paremmin).
+ * "Hälytykset" tietyille ruoka-aineille esimerkiksi, ettei sokeria ole liian usein viikolla ruuassa...
+ * Graafinen käyttöliittymä 

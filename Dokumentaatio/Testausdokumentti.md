@@ -10,7 +10,7 @@ Ohjelmaa on testattu JUnitin automaattisilla testeillä ja manuaalisesti.
 
 Integraatio testeissä on käytetty pysyväistallennukseen [FakeEatingDao](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/test/java/helpotus/domain/FakeEatingDao.java) ja [FakeUserDao](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/test/java/helpotus/domain/FakeUserDao.java), jotka käyttävät Dao-rajapintoja, mutta tallentavat koneen keskusmuistiin, erillisten tiedostojen sijaan.
 
-[User](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/User.java) ja [Eating](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/Eating.java) on tehty muutama yksikkötesti esim. equals-metodille. [DateChecking](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/DateChecking.java)-luokka toimii itsenäisesti joten sen testit ovat myös erilliset yksikkötestit.
+[User](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/User.java) ja [Eating](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/Eating.java) on tehty muutama yksikkötesti esim. equals-metodille. [DateChecking](https://github.com/KilpiV/ot-harjoitustyo/blob/master/Helpotus/src/main/java/helpotus/domain/DateChecking.java)-luokka toimii itsenäisesti, joten sen testit ovat myös erilliset yksikkötestit.
 
 ### DAO-luokat
 
@@ -55,7 +55,7 @@ Sovellus on testattu asentaa ja ajaa käyttöohjeen mukaisesti ja onnistuu hyvin
 
 ### Toiminnallisuudet
 
-Määrittelydokumentin mukaiset toiminnallisuudet on testattu läpi. Kaikkien niiden kohdalla on syötteiksi yritetty antaa myös virheellisiä syötteitä, kuten tyhjiä tai päiväyksien kohdalla muita kuin numeroita, tai virheellisiä päiviä kuten esimerkiksi 30 helmikuuta ja ohjelma antoi järkeviä virheilmoituksia eikä kaatunut.
+Määrittelydokumentin mukaiset toiminnallisuudet on testattu läpi. Kaikkien niiden kohdalla on syötteiksi yritetty antaa myös virheellisiä syötteitä, kuten tyhjiä tai päiväyksien kohdalla muita kuin numeroita, tai virheellisiä päiviä, kuten esimerkiksi 30 helmikuuta, ja ohjelma antoi järkeviä virheilmoituksia, eikä kaatunut.
 
 ## Sovellukseen jääneet laatuongelmat
 

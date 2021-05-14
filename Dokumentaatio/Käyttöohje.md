@@ -36,6 +36,7 @@ Syötä käsky
 ```
 
 ### Kirjautuminen
+
 Kirjautuminen tapahtuu syöttämällä ensin "1" ja sitten jo luotu nimimerkkisi koneelle. Muuten ohjelma tulostaa "Virheellinen nimimerkki".
 
 ```
@@ -45,7 +46,8 @@ Anna nimimerkkisi
 ```
 
 ### Uuden käyttäjän luominen
-Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle, jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
+
+Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle. Jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
 
 ```
 >> 2
@@ -55,6 +57,7 @@ Uusi käyttäjä "nimimerkki" on nyt luotu
 ```
 
 ### Kirjautumisen jälkeen
+
 Avautuu uusi näkymä
 
 ```
@@ -68,7 +71,8 @@ Syötä käsky
 ```
 
 ### Uuden ruokailun lisääminen
-Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä, haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
+
+Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi: yyyy, kuukausi: mm tai m, ja päivä: dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä, haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
 
 ```
 >> 1
@@ -97,7 +101,8 @@ Ruokailua ei lisätty
 ```
 
 ### Ruokailujen tarkasteleminen
-Ruokailujen tarkastelu tapahtuu syöttämällä ensin "2" ja sitten haettavan ruokailun päivämäärän. Jolloin ohjelma tulostaa listan kyseisen päivän ruokailuista.
+
+Ruokailujen tarkastelu tapahtuu syöttämällä ensin "2" ja sitten haettavan ruokailun päivämäärän, jolloin ohjelma tulostaa listan kyseisen päivän ruokailuista.
 
 ```
 >> 2
@@ -116,6 +121,7 @@ Päivän ruokailut:
 ```
 
 ### Poistuminen
+
 Ohjelmasta kirjaudutaan ulos ja poistutaan syöttämällä "x"
 
 ```
