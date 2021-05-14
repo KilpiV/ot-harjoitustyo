@@ -1,15 +1,16 @@
 # Käyttöohje
 
-Lataa tiedosto [Helpotus-1.0-SNAPSHOT.jar]...
+Lataa tiedosto Helpotus-1.0-SNAPSHOT.jar [loppupalautuksesta](https://github.com/KilpiV/ot-harjoitustyo/releases/tag/loppupalautus).
 
 ## Konfigurointi
 
-Sovellus olettaa, että sen käynnistymishakemistossa on konfiguraatiotiedosto config.properties, joka määrittelee tiedostojen nimet, joihin käyttäjät ja ruokailut tallennetaan.
-Tiedoston config.properties sisältö on seuraava
+Sovellus olettaa, että sen käynnistymishakemistossa on konfiguraatiotiedosto config.properties *(myös tämä löytyy loppupalautuksesta)*, joka määrittelee tiedostojen nimet, joihin käyttäjät ja ruokailut tallennetaan.
+Tiedoston config.properties sisältö on seuraava:
 ```
 userFile = users.txt
 eatingsFile = eatings.txt
 ```
+
 ## Ohjelman käynnistys
 
 Ohjelma käynnistetään komennolla
@@ -17,6 +18,7 @@ Ohjelma käynnistetään komennolla
 ```
 java -jar Helpotus-1.0-SNAPSHOT.jar
 ```
+
 ## Ohjelman käynnistyessä
 Ohjelman käynnistyessä ensin tulevat seuraavat tekstit
 
@@ -35,6 +37,7 @@ Syötä käsky
 
 ### Kirjautuminen
 Kirjautuminen tapahtuu syöttämällä ensin "1" ja sitten jo luotu nimimerkkisi koneelle. Muuten ohjelma tulostaa "Virheellinen nimimerkki".
+
 ```
 >> 1
 Anna nimimerkkisi
@@ -43,14 +46,17 @@ Anna nimimerkkisi
 
 ### Uuden käyttäjän luominen
 Uuden käyttäjän luominen tapahtuu syöttämällä ensin "2" ja sitten luotava nimimerkkisi koneelle, jos nimimerkki ei jo ollut käytössä, ohjelma tulostaa "Uusi käyttäjä on nyt luotu" ja näkymä palaa edelliseen vaiheeseen. Muuten ohjelma tulostaa "Nimimerkki on jo käytössä, valitse toinen" ja palaa takaisin.
+
 ```
 >> 2
 Anna haluamasi nimimerkki
 >> "nimimerkki"
 Uusi käyttäjä "nimimerkki" on nyt luotu
 ```
+
 ### Kirjautumisen jälkeen
 Avautuu uusi näkymä
+
 ```
 
 ---Ruokailut---
@@ -60,8 +66,10 @@ Syötä käsky
 (x) Kirjaudu ulos
 >>
 ```
+
 ### Uuden ruokailun lisääminen
 Uuden ruokailun lisääminen tapahtuu syöttämällä ensin "1", sitten päivämäärän lisättävälle ruokailulle (vuosi yyyy, kuukausi, mm tai m, ja päivä dd tai d) ja lopuksi ruuan. Ohjelma kysyy vielä, haluatko peruuttaa lisäyksen syöttämällä "x", muuten lisäys hyväksytään.
+
 ```
 >> 1
 Anna lisättävän ruokailun päivämäärä
@@ -87,8 +95,10 @@ Jos haluat peruuttaa syötä x, muuten paina enter
 Ruokailua ei lisätty
 
 ```
+
 ### Ruokailujen tarkasteleminen
 Ruokailujen tarkastelu tapahtuu syöttämällä ensin "2" ja sitten haettavan ruokailun päivämäärän. Jolloin ohjelma tulostaa listan kyseisen päivän ruokailuista.
+
 ```
 >> 2
 Anna haettavan ruokailun päivämäärä
@@ -107,6 +117,7 @@ Päivän ruokailut:
 
 ### Poistuminen
 Ohjelmasta kirjaudutaan ulos ja poistutaan syöttämällä "x"
+
 ```
 >> x
 Kiitos ja tervetuloa uudelleen
