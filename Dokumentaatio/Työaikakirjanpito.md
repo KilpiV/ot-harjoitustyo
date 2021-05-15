@@ -4,11 +4,11 @@
 | pvm | h | tehdyt asiat  |
 | :----:|:-----| :-----|
 |  7.4  | 4    | JavaFX:n selvittämistä |
-|  8.2  | 4    | lisää JavaFX:n ogelmien selvittelyä |
-| 12.2  | 1    | JavaFx jatkuu... |
-| 12.2  | 2    | Ohjauksessa JavaFx:n selvittelyä |
-| 13.2  | 3    | JavaFx... |
-| (yht) | (13) | |
+|  8.4  | 4    | lisää JavaFX:n ogelmien selvittelyä |
+| 12.4  | 1    | JavaFx jatkuu... |
+| 12.4  | 2    | Ohjauksessa JavaFx:n selvittelyä |
+| 13.4  | 3    | JavaFx... |
+| (yht) | (14) | |
 
 ## aiheen vaihto
 
@@ -37,5 +37,6 @@
 |  11.5 | 6    | Dokumentaatiota, testejä, koodin siistimistä |
 |  13.5 | 6    | Dokumentaatiota, peruutus ruokailuihin, järjetelmätestausta |
 |  14.5 | 4,5  | Dokumentaatiota, viimeistelyä |
+|  15.5 | 1    | Lopputarkastuksia ja pikkuvirheiden korjailuja |
 |       |      |  |
-|  yht  | 75   |  | 
+|  yht  | 77   |  | 
